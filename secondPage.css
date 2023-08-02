@@ -214,17 +214,24 @@ body{
  { 
     width: 100%;
     height: fit-content;
-    padding-left: 50px;
+    /* padding-left: 50px; */
  }
  table{ 
+    width: 100%;
     padding-bottom: 130px;
     padding-left: 50px;
+    border-collapse: collapse;
  }
  
  table tbody tr{ 
     background-color: black;
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
+    border-collapse: collapse;
+
+ }
+ table tbody tr td{ 
+    padding: 10px;
  }
  table tr th{ 
     /* background-color: #252e2c; */
@@ -232,6 +239,7 @@ body{
  }
  table tbody tr:hover{ 
     background-color: #232625;
+    border-radius: 10px;
  }
  .table-div{ 
     width: 100%;
@@ -249,11 +257,17 @@ body{
     font-weight: 400;
     text-align: center;
  }
- table tr td .table-row-data-div{ 
+ /* table tr td .table-row-data-div{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 120px;
+ } */
+ .table-row-data-div{ 
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
  }
 .section-4{ 
     background-color: #181818;
@@ -343,6 +357,86 @@ body{
 ::-webkit-scrollbar{ 
     display: none;
 }
+.main-area nav{ 
+    display: none;
+}
+@media(max-width: 420px){ 
+    .nav-bar{ 
+        display: none;
+    }
+    .see-all{ 
+        display: none;
+    }
+    .main-area{ 
+        flex: 1;
+    }
+    .hero{ 
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
+    .hero-section-2{ 
+        text-align: center;
+    }
+    .inner p{ 
+        padding-left: 40px;
+    }
+    .inner ul{ 
+        padding-right: 40px;
+    }
+    .body nav{ 
+        background: #000;
+        width: 100%;
+    }
+    .table-class{ 
+        width: 97%;
+    }
+    .table-div{ 
+        overflow: scroll;
+    }
+    .music-box{
+        display: none;
+    }
+    .volume-control{ 
+        display: none;
+    }
+    #volume{ 
+        display: block;
+    }
+    .main-area nav{ 
+        visibility: visible;
+    }
+    .main-area nav{ 
+        position: sticky;
+        top: 0;
+        background-color: black;
+    }
+    .nav-bar-main-area{ 
+        display: flex;
+        padding: 20px;
+    }
+    .nav-bar-section-1{ 
+        width: 70%;
+    }
+    .nav-bar-section-2{ 
+        width:30%; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar-section-2 button{ 
+        padding: 5px 15px;
+        font-size:8px; 
+        color: black;
+        background-color: white;
+        border-radius: 50px;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    .nav-bar-section-2 button:hover{ 
+        background-color: rgb(220, 220, 220);
+    }
+}
+
 @media(orientation:portrait){ 
     .nav-bar{ 
         display: none;
@@ -368,7 +462,10 @@ body{
     }
     .body nav{ 
         background: #000;
-        width: 105%;
+        width: 100%;
+    }
+    .table-class{ 
+        width: 97%;
     }
     .table-div{ 
         overflow: scroll;
@@ -382,4 +479,56 @@ body{
     #volume{ 
         display: block;
     }
-  }
+    table tbody tr td{ 
+        text-align: center;
+        border-collapse: collapse;
+    }
+    .main-area nav{ 
+        display: block;
+    }
+    .main-area nav{ 
+        position: sticky;
+        top: 0;
+        background-color: black;
+    }
+    .nav-bar-main-area{ 
+        display: flex;
+        padding: 20px;
+    }
+    .nav-bar-section-1{ 
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-bar-section-2{ 
+        width:30%; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-bar-section-2 button{ 
+        padding: 5px 10ox; 
+        font-size: 8px;
+        color: black;
+        background-color: white;
+        border-radius: 50px;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    .nav-bar-section-2 button:hover{ 
+        background-color: rgb(220, 220, 220);
+    }
+}
+
+@media(max-width:376px){ 
+    .nav-bar-section-2 button{ 
+        font-size: 7px;
+        padding: 3px 8px;
+    }
+}
+@media(min-width:767px){ 
+    .nav-bar-section-2 button{ 
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+}
