@@ -357,7 +357,7 @@ body{
 ::-webkit-scrollbar{ 
     display: none;
 }
-.main-area nav{ 
+.main-area .mainarea-nav{ 
     display: none;
 }
 @media(max-width: 420px){ 
@@ -405,7 +405,8 @@ body{
     .main-area nav{ 
         visibility: visible;
     }
-    .main-area nav{ 
+    .main-area .mainarea-nav{ 
+        display: block;
         position: sticky;
         top: 0;
         background-color: black;
@@ -489,7 +490,8 @@ body{
     .main-area nav{ 
         display: block;
     }
-    .main-area nav{ 
+    .main-area .mainarea-nav{ 
+        display: block;
         position: sticky;
         top: 0;
         background-color: black;
