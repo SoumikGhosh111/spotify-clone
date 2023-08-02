@@ -1,548 +1,359 @@
-*{ 
-    margin: 0px;
-    padding: 0px;
-}
-body{ 
-    width: 100vw;
-    height:100vh; 
-}
-.main-frame{ 
-    display:flex; 
-    flex-direction: row;
-    /* width: 99vw; */
-    flex: 1;
-    height: 100%;
-    /* padding-top: 1px; */
-}
-/* ....Nav-Bar... */
-.nav-bar{ 
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    /* width: 25%; */
-    flex: 0.1;
-    height: 100%;
-}
-.scrollbar{ 
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    
-}
-.scrollbar-1{ 
-    display: flex;
-    flex-direction: column;
-    height: 35%;
+<!DOCTYPE html>
+<html lang="en">
 
-    border-bottom: 1px solid white;
-    overflow: scroll;
-}
-.logo{ 
-    margin-left: 20px;
-    margin-bottom: 20px;
-    width: 202.58px;
-    height: fit-content;
-    padding-top:39px; 
-    align-items: center;
-    justify-content: center;
-}
-.logo img{ 
-    width: 80%;
-}
-.home-search-library{ 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 25px;
-}
-.home-search-library-items{ 
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: left; 
-    width: 98%;
-    height: fit-content;
-    transition:all 0.5s ease-in-out;
-}
-.home-search-library-items img{ 
-    width: 29.65px;
-    height: 32.12px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.home-search-library-items a{ 
-    color: white;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px
-}
-.home-search-library-items:hover{ 
-    background-color: rgb(40,40,40);
-    border-radius: 6px;
-}
-.playlist-area{ 
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    width: 100%;
-    align-items: left;
-    height: fit-content;
-}
-.playlist-area-items{ 
-    display: flex;
-    /* justify-content: space-around; */
-    align-items: left; 
-    width: 98%;
-    height: fit-content;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="secondPage.css">
+    <title>Play List</title>
+</head>
 
-.playlist-area-items h6{ 
-    color: white;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px
-}
-.playlist-area-items-img-1{ 
-    width: 29.65px;
-    height: 29.65px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    border-radius: 2px;
-    margin-top: 10px; 
-    cursor: pointer;
-}
+<body>
 
-.playlist-area-items-img-2{ 
-    width: 29.65px;
-    height: 29.65px;
-    background: linear-gradient(to bottom right, #5626ee, #bae2d7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    border-radius: 2px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-.playlist-area-items-img-3{ 
-    width: 29.65px;
-    height: 29.65px;
-    background-color: #004638;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 20px;
-    border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-}
 
-/* ....Nav-Bar... */
-/* ...Main-area... */
-.main-area{ 
-    /* width: 75%; */
-    display: flex;
-    flex: 0.9;
-    background-color: #171717;
-    flex-direction: column;
-    align-items: center ;
+    <div class="main-frame">
+        <!-- Nav-Bar -->
+        <nav class="nav-bar">
+            <header class="logo">
+                <a href="#"><img src="Spotify logo.png" alt=""></a>
+            </header>
+            <div class="scrollbar-1">
+                <div class="home-search-library">
+                    <div class="home-search-library-items"><img src="fi-ss-home.png" alt=""><a href="">
+                            <h6>Home</h6>
+                        </a></div>
+                    <div class="home-search-library-items"><img src="01 align center.png" alt=""><a href="">
+                            <h6>Search</h6>
+                        </a></div>
+                    <div class="home-search-library-items"><img src="library.png" alt=""><a href="">
+                            <h6>Library</h6>
+                        </a></div>
+                </div>
+                <div class="playlist-area">
+                    <div class="playlist-area-items">
+                        <div class="playlist-area-items-img-1">
+                            <i class="fa-solid fa-plus" style="color: #000000;"></i>
+                        </div>
+                        <h6>Create Playlist</h6>
+                    </div>
+                    <div class="playlist-area-items">
+                        <div class="playlist-area-items-img-2">
+                            <i class="fa-solid fa-heart" style="color: #ffffff;"></i>
+                        </div>
+                        <h6>Liked Songs</h6>
+                    </div>
+                    <div class="playlist-area-items">
+                        <div class="playlist-area-items-img-3">
+                            <img src="gg_media-podcast.png" alt="">
+                        </div>
+                        <h6>Your Episodes</h6>
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top: 50%;">
+                <img style="width: 230px; height: 230px;"src="album art.png" alt="">
+            </div>
+        </nav>
+        <!-- Nav-Bar -->
+        <!-- Main Area -->
+        <div class="main-area">
+            <nav class="mainarea-nav" style=" width: 100%;">
+                <div class="nav-bar-main-area">
+                    <div class="nav-bar-section-1">
+                        <i class="fa-brands fa-spotify fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="nav-bar-section-2">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                        <button class=""> OPEN APP</button>
+                        <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <div class="hero">
+                    <div class="hero-section-1">
+                        <img src="스크린샷 2021-03-16 오후 4.04 2.png" alt="">
+                    </div>
+                    <div class="hero-section-2">
+                        <h6>PLAYLIST</h6>
+                        <h1>Pop Rigth Now</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus</p>
+                        <div class="inner">
+                            <p><b>Spotify</b></p>
+                            <ul>
+                                <li>860,305 likes</li>
+                            </ul>
+                            <ul>
+                                <li>100 songs, 5 hr 5 min</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <nav>
+                    <div class="body-icons">
+                        <div
+                            style="width: 51px; height: 51px; border-radius: 50%; background-color: green; display: flex; justify-content: center; align-items: center;">
+                            <i class="fa-solid fa-play" style="color: #ffffff;"></i>
 
-}
-.hero-section{ 
-    width: 100%;
-    height: 45%;
-    display: flex;
-    justify-content: left;
-    align-items:left;
-    background-color: red;
-    background: linear-gradient(to bottom, #8daaa3, #3b4744);
-}
-.hero{ 
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    padding-top: 130px;
-    height: 100%;
-}
-.hero-section-1 img{ 
-    width: 230px;
-    height: 233px;
-}
-.hero-section-2{ 
-    color: white;
-}
-.inner{ 
-    display: flex;
-}
-.inner ul{ 
-    display: flex;
-    padding-left: 20px;
-}
-.body{
-    /* background: linear-gradient(to bottom, #2b3533 , #1c2322, #0000 ); */
-    background-color: black;
-    width: 100%;
-    /* height: 55%; */
-    color: white;
-    overflow: scroll;
- }
- .body nav{ 
-    width: 100%;
-    height:fit-content; 
-    position: sticky;
-    top: 0;
-    background:linear-gradient(to bottom, #2b3533 , #1c2322, #0000 );
-    padding-bottom: 50px;
- }
- .body-icons{ 
-    display: flex;
-    width: 137px;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-    padding-top: 10px;
-    /* background: red; */
- }
- .table-class
- { 
-    width: 100%;
-    height: fit-content;
-    /* padding-left: 50px; */
- }
- table{ 
-    width: 100%;
-    padding-bottom: 130px;
-    padding-left: 50px;
-    border-collapse: collapse;
- }
- 
- table tbody tr{ 
-    background-color: black;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-    border-collapse: collapse;
+                        </div>
+                        <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </nav>
+                <div class="table-class">
+                    <table class="table-div">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;"># Title</th>
+                                <th style="text-align: center;">Album</th>
+                                <th style="text-align: center;">Date Added</th>
+                                <th></th>
+                            </tr>
 
- }
- table tbody tr td{ 
-    padding: 10px;
- }
- table tr th{ 
-    /* background-color: #252e2c; */
-    text-transform: uppercase;
- }
- table tbody tr:hover{ 
-    background-color: #232625;
-    border-radius: 10px;
- }
- .table-div{ 
-    width: 100%;
- }
- .table-div table{ 
-    padding-left: 10px;
- }
- table tr td{ 
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
- }
- table thead th{ 
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
- }
- /* table tr td .table-row-data-div{ 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 120px;
- } */
- .table-row-data-div{ 
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
-.section-4{ 
-    background-color: #181818;
-    width: 100%;
-    height: fit-content;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.music-box{ 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 224px;
-    height: fit-content;
-    color: white;
-}
-.music-box-components{ 
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
-.music-player{ 
-    width: 742px;
-    height: fit-content;
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.music-icon-components{ 
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top:3px
-}
-.music-indicator{ 
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.music-indicator-inner{ 
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-}
-.volume-control { 
-    width: 270px;
-    height: fit-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>1</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div class="inner-div" style="width: 100%;height: 100%; display: flex; justify-content: right; align-items: center;">
+                                        <div
+                                            style="width: 50%;height:100%; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i   class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>2</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td
+                                    >
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>3</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>4</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>5</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>6</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>7</p>
+                                        <img style="width: 25px; height: 30 px;" src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-row-data-div">
+                                        <p>8</p>
+                                        <img style="width: 30px; height: 30 px; padding-left: 5px;"
+                                            src="album art.png" alt="">
+                                        <p>Were Good <br> Dua Lipa</p>
+                                    </div>
+                                </td>
+                                <td>Future Nostalgia (The Moonlight Edition)</td>
+                                <td>일 전</td>
+                                <td>
+                                    <div style="width: 100%;height: 100%; display: flex; justify-content: right;">
+                                        <div
+                                            style="width: 50%;height:fit-content; display: flex; justify-content: space-between; align-items: center; padding-right: 10px; ">
+                                            <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                            <p style="padding-top: 15px;">2:45</p>
+                                            <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- <div style="height: 30px;"></div> -->
+            </div>
+        </div>
+        <div class="section-4">
+            <div class="music-box">
+                <img src="Rectangle 9.png" alt="">
+                <div class="music-box-components">
+                    <H5>Hold on</H5>
+                    <p>Justin Beiber</p>
+                </div>
+                <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                <div style="width: 20px; height: 20px;"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M38 22H22v11.99h16V22zm8 16V9.96C46 7.76 44.2 6 42 6H6C3.8 6 2 7.76 2 9.96V38c0 2.2 1.8 4 4 4h36c2.2 0 4-1.8 4-4zm-4 .04H6V9.94h36v28.1z" fill="#ffffff" class="fill-000000"></path><path d="M0 0h48v48H0V0z" fill="none"></path></svg></div>
 
-.music-control{ 
-    width:80%;
-    height: 6px;
-    background-color: #535353;
-    border-radius: 10px;
-}
-.music-control-control{ 
-    width: 100%;
-    height: 100%;
-    background-color: #b3b3b3;
-    border-radius: 10px;
-}
-.music-control-1{ 
-    width:50%;
-    height: 6px;
-    background-color: #535353;
-    border-radius: 10px;
-}
-.music-control-control-1{ 
-    width: 100%;
-    height: 100%;
-    background-color: #b3b3b3;
-    border-radius: 10px;
-}
-::-webkit-scrollbar{ 
-    display: none;
-}
-.main-area .mainarea-nav{ 
-    display: none;
-}
-@media(max-width: 420px){ 
-    .nav-bar{ 
-        display: none;
-    }
-    .see-all{ 
-        display: none;
-    }
-    .main-area{ 
-        flex: 1;
-    }
-    .hero{ 
-        flex-wrap: wrap;
-        overflow: scroll;
-    }
-    .hero-section-2{ 
-        text-align: center;
-    }
-    .inner p{ 
-        padding-left: 40px;
-    }
-    .inner ul{ 
-        padding-right: 40px;
-    }
-    .body nav{ 
-        background: #000;
-        width: 100%;
-    }
-    .table-class{ 
-        width: 97%;
-    }
-    .table-div{ 
-        overflow: scroll;
-    }
-    .music-box{
-        display: none;
-    }
-    .volume-control{ 
-        display: none;
-    }
-    #volume{ 
-        display: block;
-    }
-    .main-area nav{ 
-        visibility: visible;
-    }
-    .main-area .mainarea-nav{ 
-        display: block;
-        position: sticky;
-        top: 0;
-        background-color: black;
-    }
-    .nav-bar-main-area{ 
-        display: flex;
-        padding: 20px;
-    }
-    .nav-bar-section-1{ 
-        width: 70%;
-    }
-    .nav-bar-section-2{ 
-        width:30%; 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav-bar-section-2 button{ 
-        padding: 5px 15px;
-        font-size:8px; 
-        color: black;
-        background-color: white;
-        border-radius: 50px;
-        border: none;
-        transition: all 0.3s ease;
-    }
-    .nav-bar-section-2 button:hover{ 
-        background-color: rgb(220, 220, 220);
-    }
-    .music-indicator{ 
-        padding: 5px 10px;
-    }
-}
+            </div>
+            <div class="music-player">
+                <div class="music-icon-components">
+                    <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                    <div
+                        style="width: 34px; height: 34px; border-radius: 50%; background-color: white; display: flex; justify-content: center; align-items: center;">
+                        <i class="fa-solid fa-play" style="color: #000000;"></i>
+                    </div>
+                    <i class="fa-solid fa-forward-step" style="color: #ffffff   ;"></i>
+                    <i class="fas fa-repeat" style="color: #ffffff;"></i>
+                </div>
+                <div class="music-indicator">
+                    <div class="music-indicator-inner">
+                        0:00
+                        <div class="music-control">
+                            <div class="music-control-control"></div>   
+                        </div>
+                        2:50
+                    </div>
+                </div>
+            </div>
+            <div class="volume-control" style="padding-right: 20px;">
+                <div style="width: 20px; height: 16px; padding-bottom:12px;"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M10 6h18v2H10zM10 12h18v2H10zM15 18h13v2H15zM10 24h18v2H10zM4 14l7 5-7 5V14z" fill="#ffffff" class="fill-000000"></path><path data-name="<Transparent Rectangle>" d="M0 0h32v32H0z" fill="none"></path></svg></div>
+                <div></div>
+                <i class="fa-solid fa-computer" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high" id="volume" style="color: #ffffff;"></i>
+                <div class="music-control-1">
+                    <div class="music-control-control-1"></div>
+                </div>
+            </div>
 
-@media(orientation:portrait){ 
-    .nav-bar{ 
-        display: none;
-    }
-    .see-all{ 
-        display: none;
-    }
-    .main-area{ 
-        flex: 1;
-    }
-    .hero{ 
-        flex-wrap: wrap;
-        overflow: scroll;
-    }
-    .hero-section-2{ 
-        text-align: center;
-    }
-    .inner p{ 
-        padding-left: 40px;
-    }
-    .inner ul{ 
-        padding-right: 40px;
-    }
-    .body nav{ 
-        background: #000;
-        width: 100%;
-    }
-    .table-class{ 
-        width: 97%;
-    }
-    .table-div{ 
-        overflow: scroll;
-    }
-    .music-box{
-        display: none;
-    }
-    .volume-control{ 
-        display: none;
-    }
-    #volume{ 
-        display: block;
-    }
-    table tbody tr td{ 
-        text-align: center;
-        border-collapse: collapse;
-    }
-    .main-area nav{ 
-        display: block;
-    }
-    .main-area .mainarea-nav{ 
-        display: block;
-        position: sticky;
-        top: 0;
-        background-color: black;
-    }
-    .nav-bar-main-area{ 
-        display: flex;
-        padding: 20px;
-    }
-    .nav-bar-section-1{ 
-        width: 70%;
-        display: flex;
-        align-items: center;
-    }
-    .nav-bar-section-2{ 
-        width:30%; 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .nav-bar-section-2 button{ 
-        padding: 5px 10ox; 
-        font-size: 8px;
-        color: black;
-        background-color: white;
-        border-radius: 50px;
-        border: none;
-        transition: all 0.3s ease;
-    }
-    .nav-bar-section-2 button:hover{ 
-        background-color: rgb(220, 220, 220);
-    }
-    .music-indicator{ 
-        padding: 5px 10px;
-    }
-}
+        </div>
+    </div>
+    </div>
+    </div>
 
-@media(max-width:376px){ 
-    .nav-bar-section-2 button{ 
-        font-size: 7px;
-        padding: 3px 8px;
-    }
-    .music-indicator{ 
-        padding: 5px 10px;
-    }
-}
-@media(min-width:767px){ 
-    .nav-bar-section-2 button{ 
-        font-size: 13px;
-        padding: 5px 15px;
-    }
-    .music-indicator{ 
-        padding: 5px 10px;
-    }
-}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
