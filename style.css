@@ -532,9 +532,9 @@ header {
     /* height: 50px; */
 }
 
-/* .main-area nav{ 
+.main-area-nav{ 
     display: none;
-  } */
+  }
 @media(orientation:portrait) {
     .nav-bar {
         display: none;
@@ -570,11 +570,11 @@ header {
         display: none;
     }
 
-    /* .main-area nav {
-        visibility: visible;
+    .main-area-nav {
+        display: block;
     }
 
-    .main-area nav {
+    .main-area-nav {
         position: sticky;
         top: 0;
         background-color: black;
@@ -605,23 +605,36 @@ header {
         border: none;
         transition: all 0.3s ease;
     }
-
     .nav-bar-section-2 button:hover {
         background-color: rgb(220, 220, 220);
     }
-
+    .nav-bar-section-1 button i{ 
+        color: #6e6e6e;
+        transition: all 0.3s ease;
+    }
+    .nav-bar-section-1 button i:hover{ 
+        color: white;
+    }
+    .nav-bar-section-1 button{ 
+        background-color: rgb(11, 11, 11);
+        /* background-color: black; */
+        border: none;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        transition: all 0.3s ease;
+    }
     .section-1 {
         display: none;
     }
-    */
 }
-/* 
+
 @media(max-width: 420px) {
-    .main-area nav {
-        visibility: visible;
+    .main-area-nav {
+        display: block;
     }
 
-    .main-area nav {
+    .main-area-nav {
         position: sticky;
         top: 0;
         background-color: black;
@@ -652,17 +665,31 @@ header {
         border: none;
         transition: all 0.3s ease;
     }
-
     .nav-bar-section-2 button:hover {
         background-color: rgb(220, 220, 220);
     }
-
+    .nav-bar-section-1 button i{ 
+        color: #6e6e6e;
+        transition: all 0.3s ease;
+    }
+    .nav-bar-section-1 button i:hover{ 
+        color: white;
+    }
+    .nav-bar-section-1 button{ 
+        background-color: rgb(11, 11, 11);
+        /* background-color: black; */
+        border: none;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        transition: all 0.3s ease;
+    }
     .section-1 {
         display: none;
     }
-} */
+}
 
-/* @media(max-width:376px) {
+@media(max-width:376px) {
     .nav-bar-section-2 button {
         font-size: 7px;
         padding: 3px 8px;
@@ -674,4 +701,40 @@ header {
         font-size: 13px;
         padding: 5px 15px;
     }
-} */
+}
+@media(min-width:452px) and (max-width:761px){ 
+    .nav-bar-section-2 button{ 
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
+}
+@media(min-width:762px){ 
+    .nav-bar-section-2 button{ 
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
+}
+@media(max-width:450px){ 
+    .nav-bar-section-2 button{ 
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
+}
+@media(max-width:371px){ 
+    .nav-bar-section-2 button{ 
+        font-size: 5px;
+        padding: 5px 10px;
+    }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
+}
