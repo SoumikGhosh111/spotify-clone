@@ -435,6 +435,9 @@ body{
     .nav-bar-section-2 button:hover{ 
         background-color: rgb(220, 220, 220);
     }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
 }
 
 @media(orientation:portrait){ 
@@ -518,6 +521,9 @@ body{
     .nav-bar-section-2 button:hover{ 
         background-color: rgb(220, 220, 220);
     }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
 }
 
 @media(max-width:376px){ 
@@ -525,10 +531,16 @@ body{
         font-size: 7px;
         padding: 3px 8px;
     }
+    .music-indicator{ 
+        padding: 5px 10px;
+    }
 }
 @media(min-width:767px){ 
     .nav-bar-section-2 button{ 
         font-size: 13px;
         padding: 5px 15px;
+    }
+    .music-indicator{ 
+        padding: 5px 10px;
     }
 }
