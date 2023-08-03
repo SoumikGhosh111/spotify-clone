@@ -357,8 +357,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #181818;
-    border-radius: 5px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
 }
 
 .inner-div {
